@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        .box {
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+
+        }
+
+        #pink {
+            background-color: pink;
+        }
+
+        #green {
+            background-color: green;
+        }
+
+        #yellow {
+            background-color: yellow;
+        }
+        a{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="pink">
+    <h1>Something new</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eveniet harum minima numquam quaerat quasi quo,
+        repellendus voluptates! Consequatur dignissimos esse eveniet ex excepturi id in maiores odio, optio praesentium
+        quam quas recusandae repellendus sed unde! Amet blanditiis dolore eos
+        facilis harum maiores quidem quisquam repellendus, sapiente similique sunt veniam.</p>
+    <a href="#green"> 	&#128071 </a>
+</div>
+
+<div class="box" id="green">
+    <a href="#pink"> &#128070 </a>
+    <h1>Something new</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eveniet harum minima numquam quaerat quasi quo,
+        repellendus voluptates! Consequatur dignissimos esse eveniet ex excepturi id in maiores odio, optio praesentium
+        quam quas recusandae repellendus sed unde! Amet blanditiis dolore eos
+        facilis harum maiores quidem quisquam repellendus, sapiente similique sunt veniam.</p>
+    <a href=#yellow>&#128071</a>
+</div>
+<div class="box" id="yellow">
+    <a href=#green>&#128070</a>
+    <h1>Something new</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eveniet harum minima numquam quaerat quasi quo,
+        repellendus voluptates! Consequatur dignissimos esse eveniet ex excepturi id in maiores odio, optio praesentium
+        quam quas recusandae repellendus sed unde! Amet blanditiis dolore eos
+        facilis harum maiores quidem quisquam repellendus, sapiente similique sunt veniam.</p>
+</div>
+</body>
+</html>
