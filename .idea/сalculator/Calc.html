@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="calcu.css">
+    <script src="jsculc.js"></script>
+</head>
+<body>
+
+<div class="main">
+    <div class="tablo">
+        <form name="form"><input type="text" name="textview" readonly></form>
+    </div>
+    <button onclick="insert('1')" class="1 a"> 1</button>
+    <button onclick="insert('2')" class="2 a"> 2</button>
+    <button onclick="insert('3')" class="3 a"> 3</button>
+    <button onclick="insert('*')" class="x a"> x</button>
+    <button onclick="insert('4')" class="4 a"> 4</button>
+    <button onclick="insert('5')" class="5 a"> 5</button>
+    <button onclick="insert('6')" class="6 a"> 6</button>
+    <button onclick="insert('-') " class="- a"> -</button>
+    <button onclick="insert('7')" class="7 a"> 7</button>
+    <button onclick="insert('8')" class="8 a"> 8</button>
+    <button onclick="insert('9')" class="9 a"> 9</button>
+    <button onclick="insert('+')" class="+ a"> +</button>
+    <button onclick="insert('0')" class="0 a"> 0</button>
+    <button onclick="insert('/')" class="/ a"> /</button>
+    <button onclick="clean()" class=". a"> C</button>
+    <button onclick="resilt()" class="= a"> =</button>
+
+
+</div>
+
+</body>
+<script>
+    function insert(num) {
+        document.form.textview.value=
+            document.form.textview.value +num;
+    }
+    function clean(){
+        document.form.textview.value=" "
+    }
+    function resilt(){
+        let exp=document.form.textview.value
+        if (exp){
+            document.form.textview.value=eval(exp)
+        }
+    }
+</script>
+</html>
